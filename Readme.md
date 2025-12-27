@@ -1,5 +1,4 @@
-admin_email= admin@hospital.com
-admin_password= admin123
+
 
 # 🏥 Hospital Management System (MERN Stack)
 
@@ -7,14 +6,7 @@ A full-stack Hospital Management System built using the MERN stack with role-bas
 
 ---
 
-## ⚙️ Project Setup
 
-### 📁 Prerequisites
-- Node.js (v18+)
-- MongoDB (Local or Atlas)
-- Git
-
----
 
 ## 🔧 Backend Setup
 
@@ -68,13 +60,5 @@ Email: admin@hospital.com
 Password: admin123
 ```
 
-
-
-### Environment Variables
-```
-All required environment variables are listed in:
-
-.env.type.txt
-```
 
 ### Make sure .env exists in:
