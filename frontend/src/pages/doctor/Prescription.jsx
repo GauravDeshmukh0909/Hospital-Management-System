@@ -102,7 +102,7 @@ export default function Prescription() {
 
   return (
     <div className="p-6 space-y-6 bg-slate-50 min-h-screen">
-      {/* Back Button */}
+   
       <button
         onClick={() => navigate("/doctor")}
         className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-800 font-medium transition-colors duration-200"
@@ -111,7 +111,7 @@ export default function Prescription() {
         Back to Dashboard
       </button>
 
-      {/* Header with Patient Info */}
+      
       <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
         <div className="p-6 bg-gradient-to-r from-green-50 to-emerald-50 border-b border-green-200">
           <div className="flex items-center justify-between">
@@ -136,7 +136,7 @@ export default function Prescription() {
           </div>
         </div>
 
-        {/* Patient Details Section */}
+       
         {patientInfo && (
           <div className="p-6 bg-blue-50 border-b border-blue-200">
             <h3 className="text-sm font-semibold text-slate-600 uppercase tracking-wide mb-3 flex items-center gap-2">

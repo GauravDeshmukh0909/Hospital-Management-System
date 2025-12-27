@@ -26,10 +26,9 @@ export const addDoctor = async (req, res) => {
 export const getAllDoctors = async (req, res) => {
   try {
     const doctors = await Doctor.find()
-      .populate('user', 'name email') // Populate user details (name, email)
-      .populate('hospital', 'name location') // Populate hospital details
-      .sort({ createdAt: -1 }); // Sort by newest first
-    
+      .populate('user', 'name email') 
+      .populate('hospital', 'name location')
+      .sort({ createdAt: -1 });
     res.status(200).json({ 
       message: "Doctors fetched successfully", 
       data: doctors 
@@ -42,7 +41,7 @@ export const getAllDoctors = async (req, res) => {
 
 
 
-// Get today's patients assigned to the logged-in doctor
+
 export const getTodaysPatients = async (req, res) => {
   try {
     const today = new Date();
@@ -74,7 +73,7 @@ export const getTodaysPatients = async (req, res) => {
   }
 };
 
-// Get patient by ID
+
 export const getPatientById = async (req, res) => {
   try {
     const { patientId } = req.params;
@@ -85,7 +84,7 @@ export const getPatientById = async (req, res) => {
       return res.status(404).json({ message: "Patient not found" });
     }
 
-    // Check if patient belongs to this doctor
+   
     if (patient.doctor.toString() !== req.user._id.toString()) {
       return res.status(403).json({ message: "Access denied" });
     }

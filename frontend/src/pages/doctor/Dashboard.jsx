@@ -86,7 +86,7 @@ export default function DoctorDashboard() {
 
   return (
     <div className="p-6 space-y-6 bg-slate-50 min-h-screen">
-      {/* Header */}
+
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold text-slate-800 flex items-center gap-3">
@@ -107,7 +107,7 @@ export default function DoctorDashboard() {
         </div>
       </div>
 
-      {/* Stats Cards */}
+  
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {stats.map((stat, index) => (
           <div
@@ -131,7 +131,7 @@ export default function DoctorDashboard() {
         ))}
       </div>
 
-      {/* Patients Table */}
+     
       <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
         <div className="p-6 border-b border-slate-200 bg-gradient-to-r from-slate-50 to-white">
           <h2 className="text-xl font-bold text-slate-800 flex items-center gap-2">
@@ -252,11 +252,11 @@ export default function DoctorDashboard() {
         )}
       </div>
 
-      {/* Patient Details Modal */}
+
       {selectedPatient && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-            {/* Modal Header */}
+      
             <div className="p-6 border-b border-slate-200 bg-gradient-to-r from-blue-50 to-cyan-50">
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-bold text-slate-800 flex items-center gap-3">
@@ -274,9 +274,9 @@ export default function DoctorDashboard() {
               </div>
             </div>
 
-            {/* Modal Body */}
+      
             <div className="p-6 space-y-6">
-              {/* Personal Information */}
+             
               <div>
                 <h4 className="text-sm font-semibold text-slate-600 uppercase tracking-wide mb-3">
                   Personal Information
@@ -301,7 +301,7 @@ export default function DoctorDashboard() {
                 </div>
               </div>
 
-              {/* Registration Details */}
+            
               <div>
                 <h4 className="text-sm font-semibold text-slate-600 uppercase tracking-wide mb-3">
                   Registration Details
@@ -324,7 +324,7 @@ export default function DoctorDashboard() {
                 </div>
               </div>
 
-              {/* Chief Complaint */}
+            
               <div>
                 <h4 className="text-sm font-semibold text-slate-600 uppercase tracking-wide mb-3">
                   Chief Complaint
@@ -334,7 +334,7 @@ export default function DoctorDashboard() {
                 </div>
               </div>
 
-              {/* Status */}
+            
               <div>
                 <h4 className="text-sm font-semibold text-slate-600 uppercase tracking-wide mb-3">
                   Status
@@ -353,7 +353,7 @@ export default function DoctorDashboard() {
               </div>
             </div>
 
-            {/* Modal Footer */}
+         
             <div className="p-6 border-t border-slate-200 bg-slate-50 flex justify-end gap-3">
               <button
                 onClick={() => setSelectedPatient(null)}

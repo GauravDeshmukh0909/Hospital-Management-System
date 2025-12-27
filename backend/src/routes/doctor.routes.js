@@ -8,14 +8,13 @@ const router = express.Router();
 
 router.use(protect, restrictTo("doctor"));
 
-// router.get("/patients/today", getTodaysPatients);
-// router.post("/prescription", createPrescription);
+
 router.get("/patients/today", getTodaysPatients);
 
-// Get specific patient by ID (needed for prescription page)
+
 router.get("/patients/:patientId", getPatientById);
 
-// Create prescription
+
 router.post("/prescription", createPrescription);
 
 

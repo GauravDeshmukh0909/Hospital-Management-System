@@ -19,15 +19,12 @@ import ProtectedRoute from "./routes/ProtectedRoute";
 import Layout from "./components/Layout";
 import PrescriptionsList from "./pages/doctor/ PrescriptionsList";
 
-
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* ================= PUBLIC ROUTE ================= */}
         <Route path="/" element={<Login />} />
 
-        {/* ================= ADMIN ROUTES ================= */}
         <Route
           path="/admin"
           element={
@@ -83,7 +80,6 @@ export default function App() {
           }
         />
 
-       {/* ================= DOCTOR ROUTES ================= */}
         <Route
           path="/doctor"
           element={
@@ -114,9 +110,7 @@ export default function App() {
             </ProtectedRoute>
           }
         />
-        
 
-        {/* ================= FALLBACK ================= */}
         <Route
           path="*"
           element={

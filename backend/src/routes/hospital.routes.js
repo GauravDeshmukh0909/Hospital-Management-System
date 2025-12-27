@@ -9,7 +9,7 @@ import { restrictTo } from "../middlewares/role.middleware.js";
 
 const router = express.Router();
 
-// Admin only
+
 router.post("/hospital", protect, restrictTo("admin"), createHospital);
 router.get("/hospitals", protect, restrictTo("admin"), getAllHospitals);
 

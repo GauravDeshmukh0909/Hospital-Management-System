@@ -33,7 +33,7 @@ export default function AdminDashboard() {
           API.get("/admin/hospitals"),
           API.get("/admin/doctors"),
           API.get("/medicine"),
-          API.get("/admin/patients") // today filter handled backend-side
+          API.get("/admin/patients")
         ]);
 
         setStats({
@@ -149,7 +149,7 @@ export default function AdminDashboard() {
           ))}
         </div>
 
-        {/* Activity Section (Optional – backend later) */}
+       
         <div className="mt-10 bg-white rounded-2xl shadow-lg p-6">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">
             System Activity
