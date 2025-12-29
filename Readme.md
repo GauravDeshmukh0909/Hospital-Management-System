@@ -21,7 +21,6 @@ A full-stack Hospital Management System with role-based access for Admin and Doc
 ```bash
 cd backend
 npm install
-cp .env.type.txt .env  # Update MongoDB URI and JWT secret
 npm run dev  # Runs on http://localhost:5000
 ```
 
