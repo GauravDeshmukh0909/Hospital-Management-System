@@ -1,64 +1,74 @@
-
-
 # 🏥 Hospital Management System (MERN Stack)
 
-A full-stack Hospital Management System built using the MERN stack with role-based access for Admin and Doctor.
+A full-stack Hospital Management System with role-based access for Admin and Doctor.
+
+**✅ All Tasks Completed** - Admin & Doctor Panel with Today's Patient Management
 
 ---
 
+## 🛠️ Tech Stack
 
+- **Frontend:** React.js + Tailwind CSS
+- **Backend:** Node.js + Express.js
+- **Database:** MongoDB
+- **Auth:** JWT + bcrypt
 
-## 🔧 Backend Setup
+---
 
+## 🔧 Setup
+
+### Backend
 ```bash
 cd backend
 npm install
+cp .env.type.txt .env  # Update MongoDB URI and JWT secret
+npm run dev  # Runs on http://localhost:5000
 ```
 
-## Environment Variables
-
-A sample environment file is provided as:
-```
-.env.type.txt
-```
-
- ### Copy it and rename to .env:
-```
-cp .env.type.txt .env
-```
-
-### Update MongoDB and JWT values in .env.
-
-## Start Backend Server
- ```
- npm run dev
-```
-
-## Backend runs on:
-```
-http://localhost:5000
-```
-
-
-##  Frontend Setup
-```
+### Frontend
+```bash
 cd frontend
 npm install
-npm run dev
+npm run dev  # Runs on http://localhost:5173
 ```
 
-### Frontend runs on:
-```
-http://localhost:5173
-```
+---
 
-## Default Admin Credentials
+## 🔐 Default Login Credentials
 
-### Use the following credentials to log in as Admin:
+### Admin
 ```
 Email: admin@hospital.com
 Password: admin123
 ```
 
+### Doctor
+```
+Email: gaurav@hospital.com
+Password: 123456
+```
 
-### Make sure .env exists in:
+---
+
+## ✨ Features
+
+### Admin Panel
+- Manage Doctors (Add, View)
+- Manage Medicines (Add, View)
+- Register Patients for Today's OPD
+- View All Patients
+
+### Doctor Panel
+- View Today's Patients Only
+- Patient Details & Complaints
+- Issue Prescriptions (Multiple Medicines)
+- View Prescription History
+
+---
+
+## 📝 Notes
+
+- JWT authentication for Admin & Doctor
+- Role-based access control
+- Sample `.env.type.txt` files included
+- Update MongoDB URI before running
