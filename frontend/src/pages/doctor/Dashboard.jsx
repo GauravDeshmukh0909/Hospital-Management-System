@@ -23,7 +23,9 @@ export default function DoctorDashboard() {
     const fetchPatients = async () => {
       try {
         const res = await API.get("/doctor/patients/today");
-        setPatients(res.data);
+        setPatients(res.data.patients);
+        console.log(res.data);
+        
       } catch (error) {
         console.error("Error fetching patients:", error);
       } finally {
